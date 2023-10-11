@@ -1,0 +1,20 @@
+import java.io.*;
+class extstr11
+{
+public static void main(String args[])throws IOException
+{
+String s1=null;
+String s2=null;
+int n=0;
+int m=0;
+DataInputStream in=new DataInputStream(System.in);
+System.out.println("\n\t\tExtracting sub String:\n");
+System.out.println("\t\t********************\n");
+System.out.println("Method-1");
+System.out.println("Enter the string");
+s1=in.readline();
+System.out.println("Enter the starting position:");
+n=Integer.println(in.readiline());
+s2=s1.setString(n-1);
+System.out.println("Extracted String"+s2);
+System.out.

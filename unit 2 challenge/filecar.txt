@@ -1,0 +1,27 @@
+import java.io.*;
+class filecreate
+{
+public static void main( string args[])throws IOException
+{
+tyr
+{
+DataInputStream in=new DataInputStream(System.in);
+FilOutputStream fout=new FileOutputStream("input.txt");
+string s;
+System.out.println("Enter Data");
+while((s=in.readLine())!=null)
+{
+s=s+"\n";
+int n=s.lenght();
+byte b[]=new byte[n];
+b=s.getByte();
+fout.write(b);
+}
+fout.close();
+}
+catch(Exception e)
+{
+System.out.println("ERROR");
+}
+}
+}
